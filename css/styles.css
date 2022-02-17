@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Oswald:wght@500&display=swap");
+
+:root {
+  --bg: #334;
+  --orange: #f79f1f;
+  --borde-color: rgba(255, 255, 255, 0.3);
+  --background: rgba(0, 0, 0, 0.1);
+  --box-shadow: rgba(0, 0, 0, 0.3);
+  --text-color: #ffff;
+}
+
+* {
+  font-family: "Domine", serif;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.conteiner {
+  padding: 80px 7%;
+  background: var(--bg);
+  position: relative;
+}
+
+.conteiner .heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 60px;
+  padding: 10px;
+}
+
+.conteiner .heading span {
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.conteiner .box-conteiner {
+  border-radius: 5px;
+  border: 1px solid  var(--borde-color);
+  box-shadow: 0 5px 10px var(--box-shadow);
+  background: var(--background);
+  padding: 0 15px;
+}
+
+.conteiner .box-conteiner .box {
+  border-radius: 5px;
+  border: 1px solid  var(--borde-color);
+  box-shadow: 0 5px 10px var(--box-shadow);
+  background: var(--background);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.conteiner .box-conteiner .box .image-conteiner {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.conteiner .box-conteiner .box .content {
+  flex: 1 1 350px;
+}
+
+.conteiner .box-conteiner .box .image-conteiner .small-image {
+  width: 20%;
+}
+
+.conteiner .box-conteiner .box .image-conteiner .big-image {
+  width: 80%;
+}
+
+.conteiner .box-conteiner .box .image-conteiner .small-image img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--borde-color);
+  cursor: pointer;
+}
+
+.conteiner .box-conteiner .box .image-conteiner .small-image img:hover{
+  background: rgb(253, 115, 1);  
+}
+
+
+.conteiner .box-conteiner .box .image-conteiner .big-image img {
+  width: 100%;
+  padding: 10px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0,.2));
+}
+
+.conteiner .box-conteiner .box .content h3 {
+  color: var(--text-color);
+  font-size: 35px;
+}
+
+.conteiner .box-conteiner .box .content .stars i {
+  color: var(--orange);
+  padding: 5px 0;
+}
+
+.conteiner .box-conteiner .box .content p {
+  color: var(--text-color);
+  padding:5px 0;
+  font-size: 20px;
+}
+
+.conteiner .box-conteiner .box .content .price {
+  color: var(--orange);
+  padding: 5px 0;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.conteiner .box-conteiner .box .content span {
+  color: var(--text-color);
+  font-size: 25px;
+  text-decoration: line-through;
+}
+
+.conteiner .box-conteiner .box .content .btn {
+  display: inline-block;
+  background: var(--background);
+  color: var(--text-color);
+  border: 1px solid var(--borde-color);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 8px 30px;
+}
+
+.conteiner .box-conteiner .box .content .btn:hover {
+  background: var(--orange);
+  color: #ffff;
+}
+
+#toggler {
+  position: absolute;
+  top: 20px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--background);
+  color: var(--text-color);
+  font-size: 30px;
+  border: 1px solid var(--borde-color);
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.active{
+  --bg: #eee;
+  --borde-color: rgba(0, 0, 0, .3);
+  --background: #f9f9f9;
+  --box-shadow: rgba(0, 0, 0, .1);
+  --text-color: #333;
+}
+
